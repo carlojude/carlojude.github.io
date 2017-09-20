@@ -90,12 +90,50 @@ AppName.Modules.ThemeModule = (function() {
         $('[data-toggle=popover]').popover();
     }
 
+    var scroll = function() {
+        $('nav').affix({
+            offset: {
+                top: $('.logo-container').height()
+            }
+        });
+
+        $(window).scroll(function() {
+            var scrollTop = $(window).scrollTop();
+            var height = $(window).height();
+            $('.logo-container').css({
+                'opacity': ((height - scrollTop) / height)
+            });
+        });
+    }
+
+    var fadeEffects = function() {
+        $(window).fadeThis({
+            distance: 70
+        });
+    }
+
+    var scrollToDiv = function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        });
+    }
+
     /////////////////////
     // Public Methods //
     ///////////////////
     var init = function() {
         owlCarouselBottom();
         popover();
+        scroll();
+        fadeEffects();
+        scrollToDiv();
     };
 
     var resize = function() {

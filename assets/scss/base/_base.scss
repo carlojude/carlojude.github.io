@@ -1,0 +1,65 @@
+.banner-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    color: #c8c3bd;
+    @include respond-to("screen-xs") {
+        font-size: 44px;
+    }
+    @include respond-to("screen-sm") {
+        font-size: 60px;
+    }
+}
+
+.typed {
+    position: relative;
+    top: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #678782;
+    @include respond-to("screen-xs") {
+        font-size: 37px;
+    }
+    @include respond-to("screen-sm") {
+        font-size: 50px;
+    }
+}
+
+.typed-cursor {
+    position: relative;
+    top: 45px;
+    font-size: 60px;
+    color: #ffa800;
+    @include respond-to("screen-xs") {
+        font-size: 37px;
+    }
+    @include respond-to("screen-sm") {
+        font-size: 50px;
+    }
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #242925;
+}
+
+.inner-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #242925;
+}
+
+.work-type {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    color: #242925;
+}
+
+.inner-content {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #242925;
+}

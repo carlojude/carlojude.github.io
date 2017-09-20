@@ -8717,6 +8717,65 @@ button.close {
   height: 100%;
   width: 100%; }
 
+.banner-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 80px;
+  color: #c8c3bd; }
+  @media screen and (max-width: 767px) {
+    .banner-title {
+      font-size: 44px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .banner-title {
+      font-size: 60px; } }
+
+.typed {
+  position: relative;
+  top: 45px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: #678782; }
+  @media screen and (max-width: 767px) {
+    .typed {
+      font-size: 37px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .typed {
+      font-size: 50px; } }
+
+.typed-cursor {
+  position: relative;
+  top: 45px;
+  font-size: 60px;
+  color: #ffa800; }
+  @media screen and (max-width: 767px) {
+    .typed-cursor {
+      font-size: 37px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .typed-cursor {
+      font-size: 50px; } }
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #242925; }
+
+.inner-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #242925; }
+
+.work-type {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  color: #242925; }
+
+.inner-content {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #242925; }
+
 @font-face {
   font-family: "Font Awesome";
   src: url("../fonts/font-awesome.eot");
@@ -8725,7 +8784,7 @@ button.close {
   font-style: normal; }
 
 body {
-  font-family: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 20px; }
 
 .no-margin {
@@ -8734,8 +8793,70 @@ body {
 .no-padding {
   padding: 0; }
 
-.no-margin-head {
+.no-margin-top {
   margin-top: 0; }
+
+.no-margin-bot {
+  margin-bottom: 0; }
+
+.display-table {
+  display: table;
+  width: 100%;
+  height: 100%; }
+  .display-table .v-align {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle; }
+
+header .logo-container {
+  height: 100vh;
+  background-image: url("../img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center; }
+  header .logo-container .v-align {
+    background-color: rgba(0, 0, 0, 0.9); }
+  @media screen and (max-width: 767px) {
+    header .logo-container {
+      height: 600px; } }
+
+header .navbar {
+  margin-top: -50px;
+  background-color: transparent;
+  border: none; }
+  header .navbar .navbar-header .navbar-brand {
+    display: none; }
+  header .navbar ul.navbar-nav {
+    text-align: center; }
+    header .navbar ul.navbar-nav li.active a {
+      background-color: transparent; }
+    header .navbar ul.navbar-nav li a {
+      color: #8D8D8D;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out; }
+
+header .affix {
+  top: 0;
+  margin-top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+  padding: 0 20%;
+  -webkit-transition: background-color 0.5s ease-in-out, padding 0.3s ease-in-out;
+  transition: background-color 0.5s ease-in-out, padding 0.3s ease-in-out; }
+  @media screen and (max-width: 767px) {
+    header .affix {
+      padding: 0; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    header .affix {
+      padding: 0; } }
+  header .affix .navbar-header .navbar-brand {
+    display: block; }
+  header .affix ul.navbar-nav li.active a {
+    background-color: white; }
+  header .affix ul.navbar-nav li a {
+    color: black; }
 
 .se-pre-con {
   z-index: 999;
@@ -8876,3 +8997,23 @@ body {
   100% {
     opacity: 1;
     left: 0; } }
+
+.about {
+  height: 100vh;
+  margin-top: 50px; }
+
+.what-i-do {
+  height: 100vh;
+  padding: 40px 0;
+  background-color: #6a7d83; }
+
+.projects {
+  padding: 40px 0;
+  height: 100%; }
+
+.contact {
+  padding: 40px 0;
+  height: 100vh;
+  background-color: #242925; }
+  .contact .title {
+    color: white; }
