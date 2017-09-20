@@ -24,28 +24,17 @@ AppName.Modules.ThemeModule = (function() {
         if (owl.length) {
             owl.owlCarousel({
                 navigation: true,
-                slideSpeed: 300,
+                slideSpeed: 200,
                 paginationSpeed: 400,
-                items: 3,
+                items: 1,
                 itemsDesktop: false,
                 itemsDesktopSmall: false,
                 itemsTablet: false,
                 itemsMobile: false,
                 loop: true,
                 autoplay: true,
-                autoplayTimeout: 6000,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    768: {
-                        items: 2
-                    },
-                    992: {
-                        items: 3
-                    }
-                }
+                autoplayTimeout: 3000,
+                responsiveClass: true
             });
         }
         $('.slider-right').click(function() {
@@ -55,36 +44,6 @@ AppName.Modules.ThemeModule = (function() {
             owl.trigger('prev.owl.carousel', [300]);
         });
     }
-
-    var owlCarouselHomeBanner = function() {
-        var bannerMain = $('.banner-main');
-        if (bannerMain.length) {
-            bannerMain.owlCarousel({
-                navigation: true,
-                slideSpeed: 300,
-                paginationSpeed: 400,
-                items: 2,
-                itemsDesktop: false,
-                itemsDesktopSmall: false,
-                itemsTablet: false,
-                itemsMobile: false,
-                loop: true,
-                autoplay: true,
-                autoplayTimeout: 5000
-            });
-        }
-        $('.banner-arrow .slider-right').click(function() {
-            bannerMain.trigger('next.owl.carousel');
-        })
-        $('.banner-arrow .slider-left').click(function() {
-            bannerMain.trigger('prev.owl.carousel', [300]);
-        });
-
-        $('#toggle').click(function() {
-            $(this).toggleClass('active');
-            $('#overlay').toggleClass('open');
-        });
-    };
 
     var popover = function() {
         $('[data-toggle=popover]').popover();
@@ -134,6 +93,7 @@ AppName.Modules.ThemeModule = (function() {
         scroll();
         fadeEffects();
         scrollToDiv();
+        matchHeight();
     };
 
     var resize = function() {
