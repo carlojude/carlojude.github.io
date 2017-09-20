@@ -1,0 +1,16 @@
+.se-pre-con {
+    z-index: 999;
+    position: fixed;
+    display: table;
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    .centered {
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+}
