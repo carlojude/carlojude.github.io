@@ -29,7 +29,9 @@ header {
                     font-size: 11px;
                 }
                 &.visible-xs {
-                    display: inline-block !important;
+                    @include respond-to("screen-xs") {
+                        display: inline-block !important;
+                    }
                 }
                 &.active {
                     a {
@@ -72,7 +74,9 @@ header {
                     font-size: 11px;
                 }
                 &.visible-xs {
-                    display: inline-block !important;
+                    @include respond-to("screen-xs") {
+                        display: inline-block !important;
+                    }
                 }
                 &.active {
                     a {

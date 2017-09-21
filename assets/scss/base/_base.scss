@@ -43,12 +43,18 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #242925;
+    @include respond-to("screen-xs") {
+        font-size: 28px;
+    }
 }
 
 .inner-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     color: #242925;
+    @include respond-to("screen-xs") {
+        font-size: 20px;
+    }
 }
 
 .work-type {
