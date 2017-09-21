@@ -13,8 +13,11 @@
 
 .send {
     float: right;
-    max-width: 200px;
+    width: 200px;
     background-color: #044b75;
     color: white;
     border: none;
+    @include respond-to("screen-xs") {
+        width: 100%;
+    }
 }

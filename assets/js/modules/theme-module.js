@@ -58,9 +58,7 @@ AppName.Modules.ThemeModule = (function() {
 
         $(window).scroll(function() {
             var scrollTop = $(window).scrollTop();
-            console.log(scrollTop);
             var height = $(window).height();
-            console.log(height);
             $('.logo-container').css({
                 'opacity': ((height - scrollTop) / height)
             });
@@ -68,9 +66,14 @@ AppName.Modules.ThemeModule = (function() {
     }
 
     var fadeEffects = function() {
-        $(window).fadeThis({
-            distance: 70
-        });
+        if ($(window).width() < 768) {
+
+        } else {
+            $(window).fadeThis({
+                distance: 70
+            });
+        }
+
     }
 
     var scrollToDiv = function() {

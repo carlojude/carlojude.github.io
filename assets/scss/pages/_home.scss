@@ -14,6 +14,9 @@
     height: 100vh;
     padding: 40px 0;
     background-color: #6a7d83;
+    @include respond-to("screen-xs") {
+        height: 100%;
+    }
     .title {
         margin-bottom: 10px;
     }
@@ -109,6 +112,9 @@
     padding: 40px 0;
     height: 100vh;
     background-color: #242925;
+    @include respond-to("screen-xs") {
+        height: 100%;
+    }
     .title {
         color: white;
     }

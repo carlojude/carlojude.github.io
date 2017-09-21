@@ -8880,6 +8880,12 @@ header .navbar {
     display: none; }
   header .navbar ul.navbar-nav {
     text-align: center; }
+    @media screen and (max-width: 767px) {
+      header .navbar ul.navbar-nav li {
+        display: inline-block;
+        font-size: 11px; } }
+    header .navbar ul.navbar-nav li.visible-xs {
+      display: inline-block !important; }
     header .navbar ul.navbar-nav li.active a {
       background-color: transparent; }
     header .navbar ul.navbar-nav li a {
@@ -8904,6 +8910,15 @@ header .affix {
       padding: 0; } }
   header .affix .navbar-header .navbar-brand {
     display: block; }
+    @media screen and (max-width: 767px) {
+      header .affix .navbar-header .navbar-brand {
+        display: none; } }
+  @media screen and (max-width: 767px) {
+    header .affix ul.navbar-nav li {
+      display: inline-block;
+      font-size: 11px; } }
+  header .affix ul.navbar-nav li.visible-xs {
+    display: inline-block !important; }
   header .affix ul.navbar-nav li.active a {
     background-color: white; }
   header .affix ul.navbar-nav li a {
@@ -8912,6 +8927,20 @@ header .affix {
 footer {
   background-color: #1D1D1D;
   color: #818181; }
+  footer .contact-holder {
+    padding-top: 20px; }
+    footer .contact-holder ul {
+      list-style: none; }
+      footer .contact-holder ul li {
+        display: inline-block; }
+        footer .contact-holder ul li i {
+          display: inline;
+          padding-right: 5px; }
+        footer .contact-holder ul li p {
+          display: inline; }
+    @media screen and (max-width: 767px) {
+      footer .contact-holder {
+        text-align: left; } }
   footer .social-holder .social-lists {
     padding-left: 0;
     margin-bottom: 0;
@@ -9082,10 +9111,13 @@ footer {
 
 .send {
   float: right;
-  max-width: 200px;
+  width: 200px;
   background-color: #044b75;
   color: white;
   border: none; }
+  @media screen and (max-width: 767px) {
+    .send {
+      width: 100%; } }
 
 .about {
   position: relative;
@@ -9101,6 +9133,9 @@ footer {
   height: 100vh;
   padding: 40px 0;
   background-color: #6a7d83; }
+  @media screen and (max-width: 767px) {
+    .what-i-do {
+      height: 100%; } }
   .what-i-do .title {
     margin-bottom: 10px; }
   .what-i-do .inner-content {
@@ -9185,6 +9220,9 @@ footer {
   padding: 40px 0;
   height: 100vh;
   background-color: #242925; }
+  @media screen and (max-width: 767px) {
+    .contact {
+      height: 100%; } }
   .contact .title {
     color: white; }
   .contact .input-group .form-control {

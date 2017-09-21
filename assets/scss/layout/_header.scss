@@ -24,6 +24,13 @@ header {
         ul.navbar-nav {
             text-align: center;
             li {
+                @include respond-to("screen-xs") {
+                    display: inline-block;
+                    font-size: 11px;
+                }
+                &.visible-xs {
+                    display: inline-block !important;
+                }
                 &.active {
                     a {
                         background-color: transparent;
@@ -53,10 +60,20 @@ header {
         .navbar-header {
             .navbar-brand {
                 display: block;
+                @include respond-to("screen-xs") {
+                    display: none;
+                }
             }
         }
         ul.navbar-nav {
             li {
+                @include respond-to("screen-xs") {
+                    display: inline-block;
+                    font-size: 11px;
+                }
+                &.visible-xs {
+                    display: inline-block !important;
+                }
                 &.active {
                     a {
                         background-color: white;
