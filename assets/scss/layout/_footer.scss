@@ -1,6 +1,27 @@
 footer {
     background-color: #1D1D1D;
     color: #818181;
+    .social-holder {
+        .social-lists {
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+            li {
+                display: inline-block;
+                a {
+                    color: gray;
+                    transition: 0.3s ease-in-out;
+                    .fa {
+                        padding: 20px;
+                        font-size: 22px;
+                    }
+                    @include on-event {
+                        color: #14596E;
+                    }
+                }
+            }
+        }
+    }
     p {
         font-size: 12px;
     }

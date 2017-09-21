@@ -8812,6 +8812,54 @@ body {
 .input-group {
   display: block; }
 
+@-webkit-keyframes fifty {
+  0% {
+    width: 0; }
+  100% {
+    width: 50%; } }
+
+@keyframes fifty {
+  0% {
+    width: 0; }
+  100% {
+    width: 50%; } }
+
+@-webkit-keyframes seventy {
+  0% {
+    width: 0; }
+  100% {
+    width: 70%; } }
+
+@keyframes seventy {
+  0% {
+    width: 0; }
+  100% {
+    width: 70%; } }
+
+@-webkit-keyframes eighty {
+  0% {
+    width: 0; }
+  100% {
+    width: 80%; } }
+
+@keyframes eighty {
+  0% {
+    width: 0; }
+  100% {
+    width: 80%; } }
+
+@-webkit-keyframes ninety {
+  0% {
+    width: 0; }
+  100% {
+    width: 90%; } }
+
+@keyframes ninety {
+  0% {
+    width: 0; }
+  100% {
+    width: 90%; } }
+
 header .logo-container {
   height: 100vh;
   background-image: url("../img/bg.jpg");
@@ -8864,6 +8912,21 @@ header .affix {
 footer {
   background-color: #1D1D1D;
   color: #818181; }
+  footer .social-holder .social-lists {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none; }
+    footer .social-holder .social-lists li {
+      display: inline-block; }
+      footer .social-holder .social-lists li a {
+        color: gray;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+        footer .social-holder .social-lists li a .fa {
+          padding: 20px;
+          font-size: 22px; }
+        footer .social-holder .social-lists li a:hover, footer .social-holder .social-lists li a:active, footer .social-holder .social-lists li a:focus {
+          color: #14596E; }
   footer p {
     font-size: 12px; }
 
@@ -9031,12 +9094,79 @@ footer {
   .about .down {
     position: absolute;
     left: 50%;
-    bottom: 10px; }
+    bottom: 10px;
+    font-size: 32px; }
 
 .what-i-do {
   height: 100vh;
   padding: 40px 0;
   background-color: #6a7d83; }
+  .what-i-do .title {
+    margin-bottom: 10px; }
+  .what-i-do .inner-content {
+    margin-bottom: 30px;
+    font-weight: 400; }
+  .what-i-do .front-end-holder {
+    text-align: left; }
+  .what-i-do .back-end-holder {
+    text-align: left; }
+  .what-i-do .progressbar {
+    background-color: #e5e5e5;
+    border-radius: 4px;
+    height: 4px;
+    margin-bottom: 30px; }
+    .what-i-do .progressbar .html,
+    .what-i-do .progressbar .css {
+      background-color: #2573a7;
+      -webkit-animation: ninety 10s ease forwards;
+              animation: ninety 10s ease forwards; }
+    .what-i-do .progressbar .sass {
+      background-color: #2573a7;
+      -webkit-animation: eighty 10s ease forwards;
+              animation: eighty 10s ease forwards; }
+    .what-i-do .progressbar .javascript,
+    .what-i-do .progressbar .jquery {
+      background-color: #2ecc71;
+      -webkit-animation: eighty 10s ease forwards;
+              animation: eighty 10s ease forwards; }
+    .what-i-do .progressbar .bootstrap {
+      background-color: #be4c00;
+      -webkit-animation: ninety 10s ease forwards;
+              animation: ninety 10s ease forwards; }
+    .what-i-do .progressbar .angular {
+      background-color: #283848;
+      -webkit-animation: fifty 10s ease forwards;
+              animation: fifty 10s ease forwards; }
+    .what-i-do .progressbar .node {
+      background-color: #283848;
+      -webkit-animation: seventy 10s ease forwards;
+              animation: seventy 10s ease forwards; }
+    .what-i-do .progressbar .php {
+      background-color: #283848;
+      -webkit-animation: eighty 10s ease forwards;
+              animation: eighty 10s ease forwards; }
+    .what-i-do .progressbar .java,
+    .what-i-do .progressbar .android {
+      background-color: #f5c24f;
+      -webkit-animation: eighty 10s ease forwards;
+              animation: eighty 10s ease forwards; }
+    .what-i-do .progressbar .python {
+      background-color: #556775;
+      -webkit-animation: fifty 10s ease forwards;
+              animation: fifty 10s ease forwards; }
+    .what-i-do .progressbar .sql {
+      background-color: #b63762;
+      -webkit-animation: ninety 10s ease forwards;
+              animation: ninety 10s ease forwards; }
+    .what-i-do .progressbar .c {
+      background-color: #689ca7;
+      -webkit-animation: ninety 10s ease forwards;
+              animation: ninety 10s ease forwards; }
+    .what-i-do .progressbar .progressStatus {
+      height: 100%;
+      width: 0;
+      position: relative;
+      overflow: visible !important; }
 
 .projects {
   padding: 30px 0 40px 0;

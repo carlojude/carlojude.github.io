@@ -6,6 +6,7 @@
         position: absolute;
         left: 50%;
         bottom: 10px;
+        font-size: 32px;
     }
 }
 
@@ -13,6 +14,78 @@
     height: 100vh;
     padding: 40px 0;
     background-color: #6a7d83;
+    .title {
+        margin-bottom: 10px;
+    }
+    .inner-content {
+        margin-bottom: 30px;
+        font-weight: 400;
+    }
+    .front-end-holder {
+        text-align: left;
+    }
+    .back-end-holder {
+        text-align: left;
+    }
+    .progressbar {
+        background-color: #e5e5e5;
+        border-radius: 4px;
+        height: 4px;
+        margin-bottom: 30px;
+        .html,
+        .css {
+            background-color: #2573a7;
+            animation: ninety 10s ease forwards;
+        }
+        .sass {
+            background-color: #2573a7;
+            animation: eighty 10s ease forwards;
+        }
+        .javascript,
+        .jquery {
+            background-color: #2ecc71;
+            animation: eighty 10s ease forwards;
+        }
+        .bootstrap {
+            background-color: #be4c00;
+            animation: ninety 10s ease forwards;
+        }
+        .angular {
+            background-color: #283848;
+            animation: fifty 10s ease forwards;
+        }
+        .node {
+            background-color: #283848;
+            animation: seventy 10s ease forwards;
+        }
+        .php {
+            background-color: #283848;
+            animation: eighty 10s ease forwards;
+        }
+        .java,
+        .android {
+            background-color: #f5c24f;
+            animation: eighty 10s ease forwards;
+        }
+        .python {
+            background-color: #556775;
+            animation: fifty 10s ease forwards;
+        }
+        .sql {
+            background-color: #b63762;
+            animation: ninety 10s ease forwards;
+        }
+        .c {
+            background-color: #689ca7;
+            animation: ninety 10s ease forwards;
+        }
+        .progressStatus {
+            height: 100%;
+            width: 0;
+            position: relative;
+            overflow: visible!important;
+        }
+    }
 }
 
 .projects {

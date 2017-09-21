@@ -29,3 +29,39 @@
 .input-group {
     display: block;
 }
+
+@keyframes fifty {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes seventy {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes eighty {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes ninety {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
