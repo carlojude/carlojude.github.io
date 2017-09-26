@@ -11,7 +11,7 @@
 }
 
 .what-i-do {
-    height: 100vh;
+    height: 100%;
     padding: 40px 0;
     background-color: #6a7d83;
     @include respond-to("screen-xs") {
