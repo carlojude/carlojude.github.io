@@ -8793,6 +8793,10 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 20px; }
 
+@media screen and (max-width: 767px) {
+  .inner-content {
+    font-size: 12px; } }
+
 .no-margin {
   margin: 0; }
 
@@ -8935,20 +8939,6 @@ header .affix {
 footer {
   background-color: #1D1D1D;
   color: #818181; }
-  footer .contact-holder {
-    padding-top: 20px; }
-    footer .contact-holder ul {
-      list-style: none; }
-      footer .contact-holder ul li {
-        display: inline-block; }
-        footer .contact-holder ul li i {
-          display: inline;
-          padding-right: 5px; }
-        footer .contact-holder ul li p {
-          display: inline; }
-    @media screen and (max-width: 767px) {
-      footer .contact-holder {
-        text-align: left; } }
   footer .social-holder .social-lists {
     padding-left: 0;
     margin-bottom: 0;
@@ -9138,7 +9128,7 @@ footer {
     font-size: 32px; }
 
 .what-i-do {
-  height: 100vh;
+  height: 100%;
   padding: 40px 0;
   background-color: #6a7d83; }
   @media screen and (max-width: 767px) {
@@ -9146,6 +9136,9 @@ footer {
       height: 100%; } }
   .what-i-do .title {
     margin-bottom: 10px; }
+  @media screen and (max-width: 767px) {
+    .what-i-do .inner-title {
+      font-size: 12px; } }
   .what-i-do .inner-content {
     margin-bottom: 30px;
     font-weight: 400; }
@@ -9231,6 +9224,18 @@ footer {
   @media screen and (max-width: 767px) {
     .contact {
       height: 100%; } }
+  .contact .contact-details .phone-holder {
+    color: white; }
+    .contact .contact-details .phone-holder p {
+      display: inline-block; }
+  .contact .contact-details .email-holder {
+    color: white; }
+    .contact .contact-details .email-holder p {
+      display: inline-block; }
+  .contact .contact-details .address-holder {
+    color: white; }
+    .contact .contact-details .address-holder p {
+      display: inline-block; }
   .contact .title {
     color: white; }
   .contact .input-group .form-control {

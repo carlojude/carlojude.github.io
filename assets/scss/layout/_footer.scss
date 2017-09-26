@@ -1,25 +1,6 @@
 footer {
     background-color: #1D1D1D;
     color: #818181;
-    .contact-holder {
-        padding-top: 20px;
-        ul {
-            list-style: none;
-            li {
-                display: inline-block;
-                i {
-                    display: inline;
-                    padding-right: 5px;
-                }
-                p {
-                    display: inline;
-                }
-            }
-        }
-        @include respond-to("screen-xs") {
-            text-align: left;
-        }
-    }
     .social-holder {
         .social-lists {
             padding-left: 0;

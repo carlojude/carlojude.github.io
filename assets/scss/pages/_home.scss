@@ -20,6 +20,11 @@
     .title {
         margin-bottom: 10px;
     }
+    .inner-title {
+        @include respond-to("screen-xs") {
+            font-size: 12px;
+        }
+    }
     .inner-content {
         margin-bottom: 30px;
         font-weight: 400;
@@ -114,6 +119,26 @@
     background-color: #242925;
     @include respond-to("screen-xs") {
         height: 100%;
+    }
+    .contact-details {
+        .phone-holder {
+            color: white;
+            p {
+                display: inline-block;
+            }
+        }
+        .email-holder {
+            color: white;
+            p {
+                display: inline-block;
+            }
+        }
+        .address-holder {
+            color: white;
+            p {
+                display: inline-block;
+            }
+        }
     }
     .title {
         color: white;
